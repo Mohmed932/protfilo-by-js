@@ -1,0 +1,737 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,300&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+::selection{
+background-color: #006d98;
+color: #fff;
+}
+::Webkit-scrollbar{
+    display: none;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+}
+h1,p,h3,h5{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+    position: relative;
+}
+.container .ulitems i{
+    margin-left: 30px;
+    color: #006d98;
+    width: 30px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+.container .logo img{
+    width:100%;
+    height: 7vh;
+}
+.container .nav ul{
+    display:flex;
+    align-items: center;
+    animation: ltrl .5s linear initial;
+}
+ul li{
+    margin-left:20px;
+}
+ ul li a{
+    color:#000;
+    position: relative;
+    font-size: 18px;
+}
+ ul li a::after{
+    content: '';
+    position: absolute;
+    height: 2.3px;
+    width:0;
+    left:0;
+    top:30px;
+    background: #006d98;
+    transition:.5s;
+}
+.container li i{
+    display: none;
+    color:#006d98;
+    font-size:20px;
+    cursor: pointer;
+}
+ul li a:hover{
+    color:#006d98;
+    transition:.5s;
+}
+ul li a:hover::after{
+    width:100%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 12%;
+    margin-top: 4%;
+}
+.home .definition{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+}
+.home .definition i,p{
+    font-size:25px;
+    padding-bottom: 10px;
+}
+.home .user{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    width:90%;
+}
+.home .user span{
+    color:#006d98;
+    font-family: 'Grape Nuts', cursive;
+}
+.home .user i,h1{
+    font-size: 47px;
+    padding-bottom:10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.home .homeimg,.homeword{
+    animation: totop 1s 1;
+}
+.home .user p{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.home i{
+    color:#006d98;
+    padding-right: 10px;
+}
+.home .homeimg img{
+    width: 90%;
+}
+@keyframes totop{
+    0%{
+        margin-top:70px;
+    }
+}
+@keyframes anmi{
+    0%,
+    100%{
+        transform:translateY(0px);
+    }
+    50%,75%{
+        transform:translateY(30px);
+    }
+}
+.todown{
+    text-align: center;
+    font-size: 50px;
+    margin-top:30px;
+    cursor: pointer;
+
+}
+.todown a{
+    color: #006d98;
+}
+.todown i:hover{
+    animation: anmi .3s linear infinite;
+}
+.Eduaction{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    height: 90vh;
+    margin-top:8%;
+}
+.Eduaction .Eduactionword img{
+    width:100%;
+    margin-top:0;
+    margin-bottom: 20%;
+}
+.Eduaction .Eduactioncurds{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    height:52vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Eduaction .Eduactioncurds .Eduactioncurdsone{
+    padding:10px;
+    margin-left:20px;
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    border:2px solid #006d98;
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+    transition: .4s;
+}
+.Eduaction .Eduactioncurds .Eduactioncurdsone:hover{
+    margin-top:-20px;
+}
+.Eduaction .Eduactioncurds img{
+    width:95%;
+    height: 40vh;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.Eduaction .Eduactioncurds  h1{
+    border-bottom: 1px solid #006d98;
+}
+.Eduaction .Eduactioncurds .Eduactioncurdstwo{
+    width: 80%;
+    padding:10px;
+    height: 100%;
+    border-radius: 10px;
+    text-align: center;
+    border:2px solid #006d98;
+    margin-left: 20px;
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+}
+.Contact{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    width:80%;
+    margin-top:70px;
+    margin-bottom:70px;
+}
+.Contact .allContact{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+ .Contactht{
+    text-align: center;
+    margin-bottom: 40px;
+    color:#fff
+}
+.Contact .Contactone{
+    width:40%;
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+    height: 110vh;
+    border-radius: 20px;
+}
+.Contact .Contacttwo .Contactleft p{
+    color:#fff;
+}
+.Contact .Contactone .Contacth{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Contact .Contactone h3 span{
+    color:#006d98
+}
+.Contact .Contactone .Contactfrist{
+    margin-left:7%;
+    margin-top: 50px;
+}
+.Contact .Contactone img{
+    width: 90%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Contact .Contactone .scoial i{
+    font-size:40px;
+    color:#006d98;
+    cursor: pointer;
+}
+.Contact .Contactone .scoial i:hover{
+    transform: scale(1.1);
+}
+ .Contact .Contacttwo{
+     width:60%;
+     box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+     margin-left: 6%;
+     height: 110vh;
+ }
+ .Contact .Contactleft{
+    margin-left: 5%;
+    width:90%;
+}
+ .Contact .Contacttwo  input{
+     outline: none;
+     width: 100%;
+     height: 6vh;
+     border:1px solid #006d98;
+     font-size: 25px;
+     text-indent: 20px;
+ }
+ .hoverinput{
+    box-shadow: 0px 0px 2px #006d98;
+    transition: .2s;
+ }
+ .Contact .Contacttwo .Contactleft p{
+     color:rgb(221, 15, 15);
+     padding:8px;
+     font-size: 16px;
+ }
+ .Contact .Contactleft .nameandnumber .PHONENUMBER{
+     margin-left: 20%;
+     width: 60%;
+ }
+ .Contact .Contactleft .YOURMESSAGE input{
+     height:30vh;
+ }
+ .Contact .Contactleft .nameandnumber,.EMAIL,.SUBJECT{
+     margin-top: 3%;
+ }
+ .Contact .Contactleft .fristtn button{
+     border: none;
+     background-color: #006d98;
+     color: #fff;
+     width: 30%;
+     height: 8vh;
+     font-size: 18px;
+     cursor: pointer;
+ }
+ .Contact .Contactleft p{
+    color: #006d98
+ }
+ .Contact .Contactleft .fristtn button:hover{
+     background: #fff;
+     color:#006d98;
+     transition: .4s;
+     transform: scale(1.1);
+ }
+ .Contact .Contacttwo .nameandnumber{
+     display: flex;
+     flex-direction: row;
+ }
+ .Contact .Contactleft h1{
+     font-size: 20px;
+ }
+ .Contact .Contactleft .nameandnumber .YOURNAME{
+    width:60%;
+}
+ .Contactimg img{
+    width:24%;
+    margin-left: 38%;
+    margin-top: 7%;
+    margin-bottom:5%;
+}
+.Pricing{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom:10%;
+}
+.Pricingimg img{
+    width:24%;
+    margin-left: 38%;
+    margin-top: 7%;
+    margin-bottom:5%;
+}
+.Pricing .Pricingdesing,.Pricingdevelopment{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #006d98;
+    margin-right:30px;
+    width: 40%;
+    text-indent: 30px;
+    height:85vh;
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+}
+.Pricing .webdesing h1{
+    padding:20px;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: line-through;
+    color: #006d98;
+}
+.Pricing .webdesing h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #006d98;
+}
+.Pricing .webdesing h2 span{
+    font-size: 25px;
+    color:#333;
+}
+.Pricing .webdesingprah p{
+    border-bottom: 1px solid #006d98;
+    margin-left:30px;
+    margin-top: 10px;
+    margin-right:30px;
+}
+.Pricing .webdesingprah p span{
+    padding-right: 20px;
+    color: #006d98;
+    cursor: pointer;
+}
+.Pricing button{
+    cursor: pointer;
+    width:60%;
+    padding: 20px;
+    border:none;
+    margin-left:17%;
+    margin-top: 10%;
+    font-size: 30px;
+    background-color: #006d98;
+    color:#fff ;
+}
+.Pricing button:hover{
+    transform: scale(1.1);
+    transition: .5s;
+    background-color: #fff;
+    color: #006d98;
+}
+.Pricing .offline{
+    position: fixed;
+    top:86vh;
+    left:10vh;
+    height: 4vh;
+    cursor: pointer;
+    transition: 1s linear;
+    background-color: #fff;
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+    padding: 30px;
+    color: #006d98;
+}
+.offlinenow{
+    display: none;
+}
+.Pricing .offline .offlinerow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.Pricing .offline .offlinerow h1{
+    font-size: 24px;
+    margin-right: 10px;
+}
+.leavetotop{
+    position: fixed;
+    top:86vh;
+    left:5vh;
+    height: 6vh;
+    cursor: pointer;
+    transition: 1s linear;
+    display: none;
+}
+.leavetotop i{
+    background-color: #006d98;
+    color: #fff;
+    padding: 13px;
+    border-radius: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.Appears{
+    display:initial;
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:#006d98;
+}
+ .Eduaction .toheader{
+    background-color: #006d98;
+    box-shadow: 10px 10px 19px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    width:40px;
+    height:40px;
+    border-radius: 10px;
+    position:fixed;
+    right: -30px;
+    font-size:40px;
+    color:#fff;
+}
+@media screen and (max-width:1200px) {
+    .container .logo img{
+        width:100%;
+        height:6vh;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding:20px;
+        margin-left: 16%;
+    }
+    .home .homeword{
+        margin-top: 30px;
+        order:1;
+    }
+    .Eduaction .Eduactioncurds{
+        display: flex;
+        flex-direction:column;
+        margin-left:15%;
+    }
+    .Eduaction .Eduactioncurds img{
+        width: 85%;
+    }
+    .Eduaction .Eduactioncurds .Eduactioncurdsone{
+        margin-bottom: 50px;
+        width:80%;
+        height: 90vh;
+    }
+    .Eduaction .Eduactionword img{
+        width:100%;
+        margin-left: 16%;
+    }
+    .Contact{
+        display: flex;
+        flex-direction: column; 
+        margin-top:5%;
+    }
+    .Contact .Contactone{
+        width:100%;
+        height: 120vh;
+        order: 1;
+        margin-top: 50px;
+    }
+    .Contact .Contacttwo{
+        width:100%;
+        height: 120vh;
+        margin-left:10px;
+    }
+    .Contactht{
+        margin-top: 60%;
+    }
+    .fristbtn{
+        margin-top: 20px;
+    }
+    .Contactimg img{
+        width:35%;
+        margin-left: 34%;
+        margin-top: 75%;
+    }
+    .Contactht{
+        font-size: 30px;
+    }
+    .Pricing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Pricingimg img{
+        width:40%;
+        margin-left: 30%;
+    }
+    .Pricing .Pricingdesing,.Pricingdevelopment{
+        width:60%;
+        margin-top:10%;
+        height: 90vh;
+    }
+}
+@media screen and (max-width:600px) {
+    .container .logo img{
+        width:100%;
+        height:5vh;
+    }
+    .nav .ulitems{
+        display:flex;
+        flex-direction: column;
+        position:fixed;
+        top:9vh;
+        background:#ffff;
+        width:100%;
+        height: 100%;
+        left:100%;
+        align-items: center;
+        justify-content: flex-start;
+        transition:.5s;
+    }
+    .nav .ulitems.add{
+        left:0;
+    }
+    .nav ul li{
+        padding:2rem 0;
+    }
+    .nav ul li a{
+        font-size: 20px;
+    }
+    .container .menu{
+        width:20px;
+        height: 14px;
+        cursor: pointer;
+        position: relative;
+    }
+    .container .menu span{
+        background-color: #006d98;
+        width:100%;
+        height: 1px;
+        position: absolute;
+        padding:1px;
+        right: 0;
+        transition: all 0.4s  ease
+    }
+    .container .menu span:first-child{
+        top:0;
+        border-bottom-left-radius:35px;
+    }
+    .container .menu span:nth-child(2){
+        top:7px;
+    }
+    .container .menu span:last-child{
+        top:14px;
+        border-top-left-radius:35px;
+    }
+    .change span:first-child,
+    .change span:last-child{
+        top:-4px;
+        background:#006d98;
+    }
+    .change span:nth-child(2){
+        opacity:0;
+    }
+    .change span:first-child{
+        transform:rotate(-45deg);
+        margin-top:15px;
+    }
+    .change span:last-child{
+        transform:rotate(45deg);
+    }
+    .home .homeword .user i,h1{
+        font-size: 35px;
+    }
+    .home .homeword .definition i,p{
+        font-size: 16px;
+    }
+    .home{
+        margin-left:7%;
+        margin-top: 10%;
+    }
+    .Eduaction {
+        margin-left: -5%;
+    }
+    .Eduaction .Eduactioncurds img{
+        width:90%;
+        height: 30vh;
+    }
+    .Eduaction .Eduactionword img{
+        width:80%;
+        margin-left: 20%;
+    }
+    .Contact .Contactone{
+        height: 85vh;
+    }
+    .Contact .Contactone h3{
+        font-size: 15px;
+    }
+    .Contact .Contactleft{
+        margin-left: 20px;
+    }
+    .Contact .Contactleft .nameandnumber{
+        display: flex;
+        flex-direction: column;
+    }
+    .Contact .Contactleft .nameandnumber .YOURNAME{
+        width:100%;
+    }
+    .Contact .Contactleft .nameandnumber .PHONENUMBER{
+        margin-left: 4px;
+        width:100%;
+    }
+    .Contactht{
+        font-size: 20px;
+    }
+    .Pricing .Pricingdesing,.Pricingdevelopment{
+        width:80%;
+        margin-top:10%;
+        height: 90vh;
+        margin-left: 5%;
+        height: 80vh;
+    }
+    .Pricing button{
+        padding:13px;
+    }
+}
+@media screen and (max-width:450px) {
+    .Eduaction .Eduactionword img{
+        width:60%;
+        margin-left:30%;
+    }
+    .Contact{
+        margin-left: 10px;
+    }
+    .Contact .Contactone{
+        width:110%;
+        height: 85vh;
+        margin-left: 15px;
+    }
+    .Contact .Contacttwo{
+        width:110%;
+        height: 130vh;
+        margin-left:15px;
+        margin-bottom:10%;
+    }
+    .Contact .Contactone h3{
+        font-size: 11.5px;
+    }
+    .Contact .Contactleft{
+        margin-left:1%;
+        width:90%;
+    }
+    .Eduactionimg img{
+        margin-bottom:10px;
+    }
+    .Pricing button{
+        padding:10px;
+        font-size: 20px;
+    }
+    .Pricingimg img{
+        width:58%;
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:400px) {
+    .Contact{
+        margin-left: 5px;
+        margin-top: 10%;
+    }
+    .Contact .Contactone{
+        width:110%;
+        height: 85vh;
+        margin-left: 15px;
+    }
+    .Contact .Contacttwo{
+        width:110%;
+        height: 130vh;
+        margin-left:15px;
+        margin-bottom:10%;
+    }
+    .Contact .Contactone h3{
+        font-size: 11.5px;
+    }
+    .Contact .Contactleft{
+        margin-left:2%;
+        width:90%;
+    }
+    .Contactimg img{
+        width: 50%;
+        margin-left: 30%;
+    }
+    .Contactimg h1{
+        color:#111;
+    }
+    .Pricing .Pricingdesing,.Pricingdevelopment{
+        height: 70vh;
+        width:95%;
+        margin-left:15%;
+    }
+}
